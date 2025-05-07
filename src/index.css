@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #18181b;
+  color: #e2e8f0;
+}
+
+.monospace {
+  /* font-family: "Orbitron", sans-serif; */
+  font-family: "Space Mono", monospace;
+}
