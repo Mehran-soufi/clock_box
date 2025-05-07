@@ -1,54 +1,104 @@
-# React + TypeScript + Vite
+# ⏰ Clock Box
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Clock Box is a customizable countdown timer built with React. You can set hours, minutes, and seconds, and start, pause, or stop the timer using clean and modern UI controls.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Editable time fields (hours, minutes, seconds)
+- ⏯ Start, Pause, and Stop buttons
+- ⏱ Real-time countdown with accurate time updates
+- 🧠 Logic based on `totalSeconds` to avoid bugs
+- 🎨 Simple and clean design
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<div align="center">
+  <img src="src/assets//screenshot/image1.png" width="400" alt="Clock Box Screenshot 1" />
+  <img src="src/assets//screenshot/image2.png" width="400" alt="Clock Box Screenshot 2" />
+  <img src="src/assets//screenshot/image3.png" width="400" alt="Clock Box Screenshot 3" />
+</div>
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- React
+- TypeScript
+- TailwindCSS
+- React Icons
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Installation
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+```bash
+git clone https://github.com/Mehran-soufi/clock_box.git
+cd clock_box
+npm install
+npm run dev
+
+📁 Project Structure
+
+clock_box/
+├── src/
+│   ├── components/
+│   │   └── Timer.tsx
+│   └── App.tsx
+├── public/
+│   └── index.html
+├── screenshot/
+│   ├── screenshot1.png
+│   ├── screenshot2.png
+│   └── screenshot3.png
+└── README.md
+
+📃 License
+This project is licensed under the MIT License.
+
+⏰ کلاک باکس (Clock Box)
+کلاک‌باکس یک تایمر شمارش معکوس قابل تنظیم است که با React ساخته شده. شما می‌توانید ساعت، دقیقه و ثانیه را تنظیم کرده و با استفاده از دکمه‌های مدرن، تایمر را شروع، متوقف یا مکث کنید.
+
+🚀 امکانات
+✅ امکان ویرایش ساعت، دقیقه و ثانیه
+
+⏯ دکمه‌های شروع، توقف و مکث
+
+⏱ شمارش معکوس دقیق و لحظه‌ای
+
+🧠 منطق مبتنی بر totalSeconds برای جلوگیری از باگ‌ها
+
+🎨 طراحی ساده و تمیز
+
+📸 تصاویر
+<div align="center">
+  <img src="src/assets//screenshot/image1.png" width="400" alt="Clock Box Screenshot 1" />
+  <img src="src/assets//screenshot/image2.png" width="400" alt="Clock Box Screenshot 2" />
+  <img src="src/assets//screenshot/image3.png" width="400" alt="Clock Box Screenshot 3" />
+</div>
+
+🛠 تکنولوژی‌های استفاده‌شده
+React
+TypeScript
+TailwindCSS
+React Icons
+
+📦 نحوه اجرا
+git clone https://github.com/Mehran-soufi/clock_box.git
+cd clock_box
+npm install
+npm run dev
+
+📁 ساختار پروژه
+clock_box/
+├── src/
+│   ├── components/
+│   │   └── Timer.tsx
+│   └── App.tsx
+├── public/
+│   └── index.html
+├── screenshots/
+│   ├── screenshot1.png
+│   ├── screenshot2.png
+│   └── screenshot3.png
+└── README.md
+
+📃 مجوز
+این پروژه تحت لایسنس MIT منتشر شده است.
+
+ساخته‌شده با ❤️ توسط مهران صوفی
